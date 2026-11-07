@@ -1,0 +1,7 @@
+tool: copilot
+entry: dist/copilot-instructions.md
+install_mode: manual
+install_to: null
+include_mode: inline
+frontmatter: null
+note: 放到各项目 .github/copilot-instructions.md；用户级需在平台设置中配置

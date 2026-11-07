@@ -1,0 +1,15 @@
+/local/
+/private/*.dec/
+/private/*.key
+/private/sources.local.yaml
+/private/*.manifest.json
+*.env
+*.key
+*.pem
+*.local.*
+overrides.yaml
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db

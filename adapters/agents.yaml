@@ -1,0 +1,7 @@
+tool: agents
+entry: dist/AGENTS.md
+install_mode: manual
+install_to: null
+include_mode: inline
+frontmatter: null
+note: 通用入口，放到各项目根；项目特有规则另写，不复制共享内容

@@ -1,0 +1,7 @@
+tool: chatgpt
+entry: dist/ai-brief.md
+install_mode: manual
+install_to: null
+include_mode: link
+frontmatter: null
+note: 无文件入口，把简报粘贴到自定义指令 / 项目知识；简报更新后需重新粘贴

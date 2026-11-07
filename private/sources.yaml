@@ -1,0 +1,23 @@
+version: 1
+bundle: private/workbuddy.bundle.enc
+restore_to: local/workbuddy
+sources:
+  - id: memory
+    base: ${CODEBUDDY_HOME}/projects
+    include: ["*/memory/*.md", "*/memory/MEMORY.md"]
+  - id: wb-skills
+    base: ${CODEBUDDY_HOME}/skills
+    include: ["wb-*/**"]
+  - id: skills-index
+    base: ${CODEBUDDY_HOME}/skills
+    include: ["README.md"]
+  - id: shared-inventory
+    base: ${WORKSPACE}/00-Shared
+    include: ["CodeBuddy技能全景清单.md"]
+exclude:
+  - "**/*.log"
+  - "**/*.env"
+  - "**/*.key"
+  - "**/*.pem"
+  - "**/__pycache__/**"
+note: 源路径只用 ${...} 占位；具体值由 local/overrides.yaml 提供，永不提交

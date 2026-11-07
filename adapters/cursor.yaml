@@ -1,0 +1,9 @@
+tool: cursor
+entry: dist/cursor-rules/ai-brain.mdc
+install_mode: copy
+install_to: ${HOME}/.cursor/rules/ai-brain.mdc
+include_mode: inline
+frontmatter:
+  description: 共享大脑：协作规则与按需索引
+  alwaysApply: true
+note: .mdc 需自带 frontmatter

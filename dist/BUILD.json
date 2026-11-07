@@ -1,0 +1,14 @@
+{
+  "content_version": "1.0.0",
+  "files": {
+    "dist/AGENTS.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
+    "dist/CLAUDE.md": "f8d6af98f66c7d985eb746633a0344d8bbaff51fd1e5afa5fd7b198eff53a8d9",
+    "dist/CODEBUDDY.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
+    "dist/GEMINI.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
+    "dist/ai-brief.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
+    "dist/copilot-instructions.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
+    "dist/cursor-rules/ai-brain.mdc": "25c364d07c0d1c5bc4b88996ea857ec8cc92f6373b1daf98902b918d843d9dd8",
+    "dist/index.jsonl": "dda3466ae9c81bfd96bda08311854f804ff90ecfc5e6b21d7d3622a2f5352d96"
+  },
+  "schema_version": 1
+}

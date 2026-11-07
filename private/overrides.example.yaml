@@ -1,0 +1,8 @@
+# 复制为 local/overrides.yaml 后填写本机实际值；local/ 永不提交。
+paths:
+  workspace: ${WORKSPACE}
+  codebuddy_home: ${CODEBUDDY_HOME}
+  ai_brain: ${AI_BRAIN}
+access:
+  note: 网络接入条件由用户侧启用，仓库内不记录任何代理地址或凭据
+tool_versions: {}

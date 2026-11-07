@@ -1,0 +1,8 @@
+tool: claude-code
+entry: dist/CLAUDE.md
+install_mode: copy
+install_to: ${HOME}/.claude/CLAUDE.md
+include_mode: import
+import_line: "@${AI_BRAIN}/dist/ai-brief.md"
+frontmatter: null
+note: 用 @ 引用简报而非复制内容

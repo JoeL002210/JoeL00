@@ -1,0 +1,7 @@
+tool: codebuddy
+entry: dist/CODEBUDDY.md
+install_mode: copy
+install_to: ${HOME}/.codebuddy/CODEBUDDY.md
+include_mode: inline
+frontmatter: null
+note: 用户级全局位置；项目级 CODEBUDDY.md 仍由各项目自行维护
