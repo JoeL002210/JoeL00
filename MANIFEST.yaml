@@ -1,5 +1,6 @@
 schema_version: 1
 content_version: "1.0.0"
+git_branch: ai-brain
 generated_by: scripts/build.py
 owner_role: ROLE-OWNER
 sensitivity_default: local
@@ -24,4 +25,4 @@ private_bundle:
   encrypted: true
   passphrase_env: AI_BRAIN_PASSPHRASE
   restore_to: local/workbuddy
-  note: 密文可入库；原文永不入库；口令永不落盘
+  note: 密文可入库；原文永不入库；口令永不入仓库

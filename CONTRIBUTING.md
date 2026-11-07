@@ -39,6 +39,13 @@ tags: [communication, delivery]
 - `summary` ≤ 150 字，用于索引与 `index.jsonl`。
 - 单卡片 ≤ 200 行；`always` 卡片总量受 `MANIFEST.yaml` 预算约束。
 
+## 分支约定
+
+- 所有提交与推送都进 `ai-brain` 分支；`main` 保留仓库原有内容，保持不动。
+- 新设备克隆后先 `git checkout ai-brain`；本地分支名保持 `ai-brain`，避免推送目标混淆。
+- 上游已设为 `origin/ai-brain`，用 `git pull --rebase` 与 `git push` 即可，不带分支参数。
+- 禁止：向 `main` 推送、向 `main` 发合并请求、把 `main` 合进 `ai-brain`。
+
 ## 流程
 
 1. 一条主题一次提交：`type(scope): 简述`。

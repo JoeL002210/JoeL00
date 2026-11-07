@@ -24,6 +24,7 @@ class CardSchemaTests(unittest.TestCase):
 
     def test_manifest_contract(self):
         manifest = common.load_manifest()
+        self.assertEqual("ai-brain", manifest["git_branch"])
         self.assertEqual("local", manifest["sensitivity_default"])
         self.assertTrue(manifest["private_bundle"]["encrypted"])
         self.assertGreater(manifest["budgets"]["ai_brief_tokens"], 0)

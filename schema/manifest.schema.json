@@ -9,6 +9,7 @@
     "content_version": {"type": "string"},
     "generated_by": {"type": "string"},
     "owner_role": {"type": "string"},
+    "git_branch": {"type": "string"},
     "sensitivity_default": {"enum": ["public", "local"]},
     "budgets": {
       "type": "object",

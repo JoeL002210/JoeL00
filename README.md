@@ -9,12 +9,21 @@
 - 各 AI 工具读 `dist/` 的入口文件，由 `bootstrap` 安装到工具的**用户级**配置位置，一次配置全项目生效。
 - 公开层只含脱敏后的规则与偏好；WorkBuddy 原文记忆与技能包通过 `private/` 的加密 bundle 跨设备同步，见 `private/README.md`。
 
+## 分支约定
+
+**所有内容与更新都在 `ai-brain` 分支**，`main` 保持仓库原有内容不动。
+
+- 克隆后第一件事：`git checkout ai-brain`（仓库默认分支是 `main`，不切就看不到这套内容）。
+- 上游已指向 `origin/ai-brain`，日常直接 `git pull --rebase` 与 `git push`，不要加分支参数。
+- 不向 `main` 推送、不向 `main` 发合并请求、不把 `main` 合进 `ai-brain`。
+
 ## 新设备接入
 
 1. `git clone <repo-url> ~/ai-brain`（Windows：`%USERPROFILE%\ai-brain`）
-2. `python -m pip install -r requirements.txt`
-3. `pwsh scripts/bootstrap.ps1`（Linux/macOS：`bash scripts/bootstrap.sh`）先看 dry-run 计划，确认后再加 `-Install` / `--install` 真正写入各工具配置；已存在的目标文件会先备份到 `local/backups/`。
-4. `python scripts/doctor.py` → 期望输出 `OK`
+2. `git checkout ai-brain`
+3. `python -m pip install -r requirements.txt`
+4. `pwsh scripts/bootstrap.ps1`（Linux/macOS：`bash scripts/bootstrap.sh`）先看 dry-run 计划，确认后再加 `-Install` / `--install` 真正写入各工具配置；已存在的目标文件会先备份到 `local/backups/`。
+5. `python scripts/doctor.py` → 期望输出 `OK`
 
 ## 日常
 
