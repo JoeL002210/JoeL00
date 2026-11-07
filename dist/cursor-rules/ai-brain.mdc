@@ -113,6 +113,7 @@ description: 共享大脑：协作规则与按需索引
 | `prompt-session-start` | prompt | 新会话开头同步远端、自检一致性、按需拉取项目上下文。 | `playbook/prompts/prompt-001-session-start.md` |
 | `prompt-handoff` | prompt | 生成可跨设备续接的交接摘要，并把改进建议写进 inbox 而非直接改核心规则。 | `playbook/prompts/prompt-002-handoff.md` |
 | `prompt-privacy-review` | prompt | 按陌生人测试逐项复核新增内容，扫描器只报布尔结论。 | `playbook/prompts/prompt-003-privacy-review.md` |
+| `prompt-update-brain` | prompt | 同步远端、收集两侧变化、重建加密 bundle、重生成入口、全套验证后推送到 ai-brain。 | `playbook/prompts/prompt-004-update-brain.md` |
 | `skill-workbuddy-index` | index | 15 个 wb-* 技能的编号、场景与触发说法；完整原文通过加密 bundle 同步。 | `playbook/skills/workbuddy-index.md` |
 | `wf-session` | workflow | 同步 → 自检 → 按需加载 → 收尾写 inbox → 重跑生成 → 提交。 | `playbook/workflows/wf-001-session.md` |
 | `wf-onboard-device` | workflow | 克隆 → 装依赖 → bootstrap 安装到用户级 → 可选解密 → doctor 自检。 | `playbook/workflows/wf-002-onboard-device.md` |

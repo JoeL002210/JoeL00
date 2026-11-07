@@ -1,14 +1,14 @@
 {
   "content_version": "1.0.0",
   "files": {
-    "dist/AGENTS.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
+    "dist/AGENTS.md": "2a8905846a6d36a89f3037d7180cd3d11d4bc3a5ae1011c9dfd3d9be324f624e",
     "dist/CLAUDE.md": "f8d6af98f66c7d985eb746633a0344d8bbaff51fd1e5afa5fd7b198eff53a8d9",
-    "dist/CODEBUDDY.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
-    "dist/GEMINI.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
-    "dist/ai-brief.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
-    "dist/copilot-instructions.md": "0f075d40833bd58423a707abadcefb676c51ef2647e1e5a83ff10d90807e0cd5",
-    "dist/cursor-rules/ai-brain.mdc": "25c364d07c0d1c5bc4b88996ea857ec8cc92f6373b1daf98902b918d843d9dd8",
-    "dist/index.jsonl": "dda3466ae9c81bfd96bda08311854f804ff90ecfc5e6b21d7d3622a2f5352d96"
+    "dist/CODEBUDDY.md": "2a8905846a6d36a89f3037d7180cd3d11d4bc3a5ae1011c9dfd3d9be324f624e",
+    "dist/GEMINI.md": "2a8905846a6d36a89f3037d7180cd3d11d4bc3a5ae1011c9dfd3d9be324f624e",
+    "dist/ai-brief.md": "2a8905846a6d36a89f3037d7180cd3d11d4bc3a5ae1011c9dfd3d9be324f624e",
+    "dist/copilot-instructions.md": "2a8905846a6d36a89f3037d7180cd3d11d4bc3a5ae1011c9dfd3d9be324f624e",
+    "dist/cursor-rules/ai-brain.mdc": "629c8c8b0b8537d1c05ae0bac001f288908abc927e5fb90bb4d0a99e4e8bf25d",
+    "dist/index.jsonl": "68c656e24a1d17c9852950edbc406961118caae5403af305e3ba6567e743b84a"
   },
   "schema_version": 1
 }

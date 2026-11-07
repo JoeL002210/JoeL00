@@ -127,12 +127,13 @@ def collect_sources() -> list[tuple[str, Path]]:
         base = Path(common.expand(source["base"]))
         if not base.is_dir():
             continue
+        rules = excludes + source.get("exclude", [])
         for pattern in source["include"]:
             for path in sorted(base.glob(pattern)):
                 if not path.is_file():
                     continue
                 rel = path.relative_to(base).as_posix()
-                if any(fnmatch.fnmatch(rel, rule.lstrip("/")) for rule in excludes):
+                if any(fnmatch.fnmatch(rel, rule.lstrip("/")) for rule in rules):
                     continue
                 arc = f"{source['id']}/{rel}"
                 collected[arc] = (arc, path)

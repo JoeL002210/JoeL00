@@ -27,6 +27,8 @@
 
 ## 日常
 
-会话前 `git pull --rebase`；会话中 AI 的改进建议写进 `inbox/`，不直接改 `core/`；会话后提交并在 `CHANGELOG.md` 留一行。改了任何卡片后必须重跑 `python scripts/build.py`。
+说一句「**更新一下大脑**」即执行全量同步：同步远端 → 收集 WorkBuddy / CodeBuddy 两侧变化 → 重建加密 bundle → 重生成入口 → 全套验证 → 提交并推送到 `ai-brain`。完整步骤见 `playbook/prompts/prompt-004-update-brain.md`，这套流程写在仓库里，换设备、换 AI 都读得到。
+
+会话中 AI 的改进建议写进 `inbox/`，不直接改 `core/`；改了任何卡片后必须重跑 `python scripts/build.py` 并在 `CHANGELOG.md` 留一行。
 
 详见 `CONTRIBUTING.md`（写入协议）、`PRIVACY.md`（边界）、`SECURITY.md`（误提交处理）。

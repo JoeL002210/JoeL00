@@ -2,22 +2,40 @@ version: 1
 bundle: private/workbuddy.bundle.enc
 restore_to: local/workbuddy
 sources:
+  # 记忆（含 WorkBuddy 镜像记忆）
   - id: memory
     base: ${CODEBUDDY_HOME}/projects
     include: ["*/memory/*.md", "*/memory/MEMORY.md"]
+  # WorkBuddy 玩法技能包
   - id: wb-skills
     base: ${CODEBUDDY_HOME}/skills
     include: ["wb-*/**"]
+  # 用户级技能索引
   - id: skills-index
     base: ${CODEBUDDY_HOME}/skills
     include: ["README.md"]
+  # CodeBuddy 其余用户级技能（排除已在 wb-skills 中的部分，避免重复打包）
+  - id: codebuddy-user-skills
+    base: ${CODEBUDDY_HOME}/skills
+    include: ["*/**"]
+    exclude: ["wb-*/**"]
+  # CodeBuddy 项目级技能
+  - id: codebuddy-project-skills
+    base: ${WORKSPACE}/.codebuddy/skills
+    include: ["**/*"]
+  # 工作区根指令
+  - id: codebuddy-root
+    base: ${WORKSPACE}
+    include: ["CODEBUDDY.md"]
+  # 共享文档（技能全景清单等）
   - id: shared-inventory
     base: ${WORKSPACE}/00-Shared
-    include: ["CodeBuddy技能全景清单.md"]
+    include: ["**/*.md"]
 exclude:
   - "**/*.log"
   - "**/*.env"
   - "**/*.key"
   - "**/*.pem"
+  - "**/*.pyc"
   - "**/__pycache__/**"
-note: 源路径只用 ${...} 占位；具体值由 local/overrides.yaml 提供，永不提交
+note: 源路径只用 ${...} 占位；具体值由 local/overrides.yaml 提供，永不提交。日志、插件与市场缓存、业务产出物一律不纳入。
