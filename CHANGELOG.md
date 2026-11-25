@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased — 2026-11-25
+
+- 修复 `private/sources.yaml` 排除规则：剔除 `.git/`、node_modules 与媒体二进制，避免 bundle 膨胀至数百 MB；本次 bundle 收敛到 33.77 MB / 4882 个源文件。
+
 ## 1.0.0 — 2026-11-07
 
 - 建立仓库骨架：三层内容模型、卡片 schema、7 个工具适配器、生成/自检/扫描脚本与 CI 护栏。
